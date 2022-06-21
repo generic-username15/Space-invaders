@@ -1,0 +1,29 @@
+\hypertarget{timer_8h_source}{}\doxysection{timer.\+h}
+\label{timer_8h_source}\index{C:/Users/max/source/repos/space\_invaders/space\_invaders/timer.h@{C:/Users/max/source/repos/space\_invaders/space\_invaders/timer.h}}
+\mbox{\hyperlink{timer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef SPACE\_INVADERS\_TIMER\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define SPACE\_INVADERS\_TIMER\_H}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <chrono>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_timer}{Timer}} \{}
+\DoxyCodeLine{8 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     std::chrono::system\_clock::time\_point \mbox{\hyperlink{class_timer_a3f74fa6f0d074638a81a8b774279587e}{startTime}};}
+\DoxyCodeLine{12     std::chrono::duration<float> \mbox{\hyperlink{class_timer_ac75c96cf40026b59f05c607dbb1607e6}{deltaTime}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_timer_a9020542d73357a4eef512eefaf57524b}{reset}}();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_timer_ae20cc1214122a766205cafc05729551b}{DeltaTime}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_timer_af90455f3201a327ae96eb37e21a9ca31}{Tick}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \mbox{\hyperlink{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer}}();}
+\DoxyCodeLine{23 \};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

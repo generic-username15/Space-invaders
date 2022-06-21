@@ -1,0 +1,187 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Class \mbox{\hyperlink{class_enemy}{Enemy}} is pure virtual class, base for three types of enemies.  
+
+
+
+
+{\ttfamily \#include $<$classes\+\_\+and\+\_\+functions.\+h$>$}
+
+Inheritance diagram for Enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_enemy_aafb628c66008e33afdd750e2f492bd98}{$\sim$\+Enemy}} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_a98f0d2110309536798101b88d2d1d8c9}{Enemy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Parametric constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a9a398f8d12234f02563b27440aff7891}{move}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_a822003dddfb396a8243519fa32ccaf81}{move\+\_\+down}} ()
+\item 
+bool \mbox{\hyperlink{class_enemy_a2cce7194016cb90b9e457b3da131fd8a}{is\+Alive}} ()
+\item 
+virtual void \mbox{\hyperlink{class_enemy_a786eba282508bc69ccdf9fa301877564}{shot}} (std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&e\+\_\+bullet)=0
+\item 
+int \mbox{\hyperlink{class_enemy_a85cf9cf3c9b8989357005e3cbf873593}{get\+\_\+y\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Function returning y value of position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_enemy_a960c8f4f54068c64bdc0e24b128a9cf4}{change\+\_\+move\+\_\+direction}} ()
+\begin{DoxyCompactList}\small\item\em Static function used to change direction of movement of all enemies based of boolean variable move\+\_\+side. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{class_enemy_a0c482ff730b306a1fad1af8251c732d2}{health}} = 1
+\begin{DoxyCompactList}\small\item\em Variable indicating health level of enemy, set by default at 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_enemy_a9546132fdbeb49ad5b3804dddf384fc1}{move\+\_\+side}} = true
+\begin{DoxyCompactList}\small\item\em Static boolean variable keeping track of side in which enemies should move (rue -\/ right, false -\/left) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_a80849b24c7d0195dda2921652d4aa732}{Manager\+::check\+Enemy\+Collisions}} ()
+\item 
+void \mbox{\hyperlink{class_enemy_ae797cf0166eaacaf5ff38d0f5965924c}{Manager\+::reset\+Game}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class \mbox{\hyperlink{class_enemy}{Enemy}} is pure virtual class, base for three types of enemies. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_enemy_aafb628c66008e33afdd750e2f492bd98}\label{class_enemy_aafb628c66008e33afdd750e2f492bd98}} 
+\index{Enemy@{Enemy}!````~Enemy@{$\sim$Enemy}}
+\index{````~Enemy@{$\sim$Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Enemy()}{~Enemy()}}
+{\footnotesize\ttfamily virtual Enemy\+::$\sim$\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\mbox{\Hypertarget{class_enemy_a98f0d2110309536798101b88d2d1d8c9}\label{class_enemy_a98f0d2110309536798101b88d2d1d8c9}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parametric constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a960c8f4f54068c64bdc0e24b128a9cf4}\label{class_enemy_a960c8f4f54068c64bdc0e24b128a9cf4}} 
+\index{Enemy@{Enemy}!change\_move\_direction@{change\_move\_direction}}
+\index{change\_move\_direction@{change\_move\_direction}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{change\_move\_direction()}{change\_move\_direction()}}
+{\footnotesize\ttfamily void Enemy\+::change\+\_\+move\+\_\+direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Static function used to change direction of movement of all enemies based of boolean variable move\+\_\+side. 
+
+\mbox{\Hypertarget{class_enemy_a85cf9cf3c9b8989357005e3cbf873593}\label{class_enemy_a85cf9cf3c9b8989357005e3cbf873593}} 
+\index{Enemy@{Enemy}!get\_y\_position@{get\_y\_position}}
+\index{get\_y\_position@{get\_y\_position}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{get\_y\_position()}{get\_y\_position()}}
+{\footnotesize\ttfamily int Enemy\+::get\+\_\+y\+\_\+position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function returning y value of position. 
+
+\mbox{\Hypertarget{class_enemy_a2cce7194016cb90b9e457b3da131fd8a}\label{class_enemy_a2cce7194016cb90b9e457b3da131fd8a}} 
+\index{Enemy@{Enemy}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily bool Enemy\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function checking if enemy is alive
+
+\begin{DoxyReturn}{Returns}
+true -\/ if enemy\textquotesingle{}s health is larger than zero and false -\/ if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_enemy_a9a398f8d12234f02563b27440aff7891}\label{class_enemy_a9a398f8d12234f02563b27440aff7891}} 
+\index{Enemy@{Enemy}!move@{move}}
+\index{move@{move}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Enemy\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function responsible for side enemies movement
+
+Depending on boolean move\+\_\+side variable x-\/position of enemy is enlarged, or decreased by 50 pixels \mbox{\Hypertarget{class_enemy_a822003dddfb396a8243519fa32ccaf81}\label{class_enemy_a822003dddfb396a8243519fa32ccaf81}} 
+\index{Enemy@{Enemy}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily void Enemy\+::move\+\_\+down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function responsible for moving down enemies
+
+While called y-\/position of enemy is incremented by 70 pixels \mbox{\Hypertarget{class_enemy_a786eba282508bc69ccdf9fa301877564}\label{class_enemy_a786eba282508bc69ccdf9fa301877564}} 
+\index{Enemy@{Enemy}!shot@{shot}}
+\index{shot@{shot}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{shot()}{shot()}}
+{\footnotesize\ttfamily virtual void Enemy\+::shot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&}]{e\+\_\+bullet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_fire__enemy_ac7e3e09cf1bffeb9513c21d738f7cc92}{Fire\+\_\+enemy}}, \mbox{\hyperlink{class_stone__enemy_abd5e03da92bc0f708012f57d6465ec6f}{Stone\+\_\+enemy}}, and \mbox{\hyperlink{class_toxic__enemy_a85e6f9fcb5c05aa229d4cbe9258b78c8}{Toxic\+\_\+enemy}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_enemy_a80849b24c7d0195dda2921652d4aa732}\label{class_enemy_a80849b24c7d0195dda2921652d4aa732}} 
+\index{Enemy@{Enemy}!Manager::checkEnemyCollisions@{Manager::checkEnemyCollisions}}
+\index{Manager::checkEnemyCollisions@{Manager::checkEnemyCollisions}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Manager::checkEnemyCollisions}{Manager::checkEnemyCollisions}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_manager_ae4503e5714c4b15f8ef62062884117df}{Manager\+::check\+Enemy\+Collisions}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{class_enemy_ae797cf0166eaacaf5ff38d0f5965924c}\label{class_enemy_ae797cf0166eaacaf5ff38d0f5965924c}} 
+\index{Enemy@{Enemy}!Manager::resetGame@{Manager::resetGame}}
+\index{Manager::resetGame@{Manager::resetGame}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Manager::resetGame}{Manager::resetGame}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_manager_ad02f0fcd3b5c5fee8319b4f6caee7fe0}{Manager\+::reset\+Game}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_enemy_a0c482ff730b306a1fad1af8251c732d2}\label{class_enemy_a0c482ff730b306a1fad1af8251c732d2}} 
+\index{Enemy@{Enemy}!health@{health}}
+\index{health@{health}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{health}{health}}
+{\footnotesize\ttfamily unsigned int Enemy\+::health = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Variable indicating health level of enemy, set by default at 1. 
+
+\mbox{\Hypertarget{class_enemy_a9546132fdbeb49ad5b3804dddf384fc1}\label{class_enemy_a9546132fdbeb49ad5b3804dddf384fc1}} 
+\index{Enemy@{Enemy}!move\_side@{move\_side}}
+\index{move\_side@{move\_side}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{move\_side}{move\_side}}
+{\footnotesize\ttfamily bool Enemy\+::move\+\_\+side = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Static boolean variable keeping track of side in which enemies should move (rue -\/ right, false -\/left) 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{classes__and__functions_8h}{classes\+\_\+and\+\_\+functions.\+h}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{functions__and__methods_8cpp}{functions\+\_\+and\+\_\+methods.\+cpp}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

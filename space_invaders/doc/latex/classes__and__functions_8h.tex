@@ -1,0 +1,151 @@
+\hypertarget{classes__and__functions_8h}{}\doxysection{C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/classes\+\_\+and\+\_\+functions.h File Reference}
+\label{classes__and__functions_8h}\index{C:/Users/max/source/repos/space\_invaders/space\_invaders/classes\_and\_functions.h@{C:/Users/max/source/repos/space\_invaders/space\_invaders/classes\_and\_functions.h}}
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Audio.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_manager}{Manager}}
+\begin{DoxyCompactList}\small\item\em Class responsible for managing entire game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_entity}{Entity}}
+\begin{DoxyCompactList}\small\item\em Pure virtual class which is base class for all entities in the game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_enemy}{Enemy}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_enemy}{Enemy}} is pure virtual class, base for three types of enemies. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fire__enemy}{Fire\+\_\+enemy}}
+\begin{DoxyCompactList}\small\item\em First sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing fire type opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_stone__enemy}{Stone\+\_\+enemy}}
+\begin{DoxyCompactList}\small\item\em Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_toxic__enemy}{Toxic\+\_\+enemy}}
+\begin{DoxyCompactList}\small\item\em Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_projectile}{Projectile}}
+\begin{DoxyCompactList}\small\item\em Pure virtual class, base for enemy\textquotesingle{}s and players projectiles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_player__projectile}{Player\+\_\+projectile}}
+\begin{DoxyCompactList}\small\item\em Class responsible for managing player\textquotesingle{}s projectiles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}}
+\begin{DoxyCompactList}\small\item\em Pure virtual class responsible for managing enemy\textquotesingle{}s projectiles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_stone__projectile}{Stone\+\_\+projectile}}
+\begin{DoxyCompactList}\small\item\em Sub-\/class of Enemy\+\_\+projectiles representing projectiles of stone opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_toxic__projectile}{Toxic\+\_\+projectile}}
+\begin{DoxyCompactList}\small\item\em Sub-\/class of Enemy\+\_\+projectiles representing projectiles of toxic opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fire__projectile}{Fire\+\_\+projectile}}
+\begin{DoxyCompactList}\small\item\em Sub-\/class of Enemy\+\_\+projectiles representing projectiles of fire opponent. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_health__bar}{Health\+\_\+bar}}
+\begin{DoxyCompactList}\small\item\em Class managing a health bar of the player. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_player}{Player}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_player}{Player}} class providing all of functionalities of the player. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classaudio_manager}{audio\+Manager}}
+\begin{DoxyCompactList}\small\item\em Class responsible for storying and playing sounds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{classes__and__functions_8h_afe1b2a34971676e4349e6afd6470f960}{SPACE\+\_\+\+INVADERS\+\_\+\+FUNCTIONS\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classes__and__functions_8h_abc094ead94eb1f017145c45282b0e4d8}{load\+Graphics}} ()
+\item 
+bool \mbox{\hyperlink{classes__and__functions_8h_aefd4d70d74d5c0584805915de76b1a5e}{my\+\_\+random}} (int P)
+\begin{DoxyCompactList}\small\item\em Fucntion responsible for randomless in project. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes__and__functions_8h_a487857cba666e508dc0889eabd3ce701}{display\+\_\+start\+\_\+screen}} (sf\+::\+Render\+Window \&win, sf\+::\+Font font)
+\begin{DoxyCompactList}\small\item\em Function displaying start screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes__and__functions_8h_a7d5816f3d4f1a667d6ec723b76d42d24}{display\+\_\+win\+\_\+screen}} (sf\+::\+Render\+Window \&win, sf\+::\+Font font)
+\begin{DoxyCompactList}\small\item\em Funciton displaying win screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes__and__functions_8h_a86f8eea05565808eda790c0ebe041ffd}{display\+\_\+lose\+\_\+screen}} (sf\+::\+Render\+Window \&win, sf\+::\+Font font)
+\begin{DoxyCompactList}\small\item\em Function displaying lose screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classes__and__functions_8h_a8050553825a8dcfbdf6cb01c817a68a7}{fill\+\_\+enemies}} (std\+::vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$ \&enemies)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{classes__and__functions_8h_afe1b2a34971676e4349e6afd6470f960}\label{classes__and__functions_8h_afe1b2a34971676e4349e6afd6470f960}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!SPACE\_INVADERS\_FUNCTIONS\_H@{SPACE\_INVADERS\_FUNCTIONS\_H}}
+\index{SPACE\_INVADERS\_FUNCTIONS\_H@{SPACE\_INVADERS\_FUNCTIONS\_H}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{SPACE\_INVADERS\_FUNCTIONS\_H}{SPACE\_INVADERS\_FUNCTIONS\_H}}
+{\footnotesize\ttfamily \#define SPACE\+\_\+\+INVADERS\+\_\+\+FUNCTIONS\+\_\+H}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{classes__and__functions_8h_a86f8eea05565808eda790c0ebe041ffd}\label{classes__and__functions_8h_a86f8eea05565808eda790c0ebe041ffd}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!display\_lose\_screen@{display\_lose\_screen}}
+\index{display\_lose\_screen@{display\_lose\_screen}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{display\_lose\_screen()}{display\_lose\_screen()}}
+{\footnotesize\ttfamily void display\+\_\+lose\+\_\+screen (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win,  }\item[{sf\+::\+Font}]{font }\end{DoxyParamCaption})}
+
+
+
+Function displaying lose screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes__and__functions_8h_a487857cba666e508dc0889eabd3ce701}\label{classes__and__functions_8h_a487857cba666e508dc0889eabd3ce701}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!display\_start\_screen@{display\_start\_screen}}
+\index{display\_start\_screen@{display\_start\_screen}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{display\_start\_screen()}{display\_start\_screen()}}
+{\footnotesize\ttfamily void display\+\_\+start\+\_\+screen (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win,  }\item[{sf\+::\+Font}]{font }\end{DoxyParamCaption})}
+
+
+
+Function displaying start screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes__and__functions_8h_a7d5816f3d4f1a667d6ec723b76d42d24}\label{classes__and__functions_8h_a7d5816f3d4f1a667d6ec723b76d42d24}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!display\_win\_screen@{display\_win\_screen}}
+\index{display\_win\_screen@{display\_win\_screen}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{display\_win\_screen()}{display\_win\_screen()}}
+{\footnotesize\ttfamily void display\+\_\+win\+\_\+screen (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win,  }\item[{sf\+::\+Font}]{font }\end{DoxyParamCaption})}
+
+
+
+Funciton displaying win screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes__and__functions_8h_a8050553825a8dcfbdf6cb01c817a68a7}\label{classes__and__functions_8h_a8050553825a8dcfbdf6cb01c817a68a7}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!fill\_enemies@{fill\_enemies}}
+\index{fill\_enemies@{fill\_enemies}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{fill\_enemies()}{fill\_enemies()}}
+{\footnotesize\ttfamily void fill\+\_\+enemies (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$ \&}]{enemies }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classes__and__functions_8h_abc094ead94eb1f017145c45282b0e4d8}\label{classes__and__functions_8h_abc094ead94eb1f017145c45282b0e4d8}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!loadGraphics@{loadGraphics}}
+\index{loadGraphics@{loadGraphics}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{loadGraphics()}{loadGraphics()}}
+{\footnotesize\ttfamily void load\+Graphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classes__and__functions_8h_aefd4d70d74d5c0584805915de76b1a5e}\label{classes__and__functions_8h_aefd4d70d74d5c0584805915de76b1a5e}} 
+\index{classes\_and\_functions.h@{classes\_and\_functions.h}!my\_random@{my\_random}}
+\index{my\_random@{my\_random}!classes\_and\_functions.h@{classes\_and\_functions.h}}
+\doxysubsubsection{\texorpdfstring{my\_random()}{my\_random()}}
+{\footnotesize\ttfamily bool my\+\_\+random (\begin{DoxyParamCaption}\item[{int}]{P }\end{DoxyParamCaption})}
+
+
+
+Fucntion responsible for randomless in project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True with given probability P
+\end{DoxyReturn}

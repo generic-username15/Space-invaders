@@ -1,0 +1,123 @@
+\hypertarget{class_stone__enemy}{}\doxysection{Stone\+\_\+enemy Class Reference}
+\label{class_stone__enemy}\index{Stone\_enemy@{Stone\_enemy}}
+
+
+Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent.  
+
+
+
+
+{\ttfamily \#include $<$classes\+\_\+and\+\_\+functions.\+h$>$}
+
+Inheritance diagram for Stone\+\_\+enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_stone__enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stone__enemy_ac15cda4d4bb35320fabe6c01b493cfc9}{$\sim$\+Stone\+\_\+enemy}} () override=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stone__enemy_ae574bb588e36ea9159d31aa7b951c79f}{Stone\+\_\+enemy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Parametric constructor setting Stone\+\_\+\+Enemy\+::health at 3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stone__enemy_ab5a7d4e7beb6eda409b9b0ef10b4e59c}{show}} (sf\+::\+Render\+Window \&win) override
+\item 
+void \mbox{\hyperlink{class_stone__enemy_abd5e03da92bc0f708012f57d6465ec6f}{shot}} (std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&e\+\_\+bullet) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_stone__enemy_a6237002ab2009600ad1d611d2ec2ce25}{graphics\+\_\+hp1}}
+\begin{DoxyCompactList}\small\item\em Sprites storing textures for different hp-\/levels of this enemy type. \end{DoxyCompactList}\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_stone__enemy_a3a427463e2eb70b457f765cb14925daf}{graphics\+\_\+hp2}}
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_stone__enemy_aa8ebb0085d14a497176bcc8704abf4bc}{graphics\+\_\+hp3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_stone__enemy_ac15cda4d4bb35320fabe6c01b493cfc9}\label{class_stone__enemy_ac15cda4d4bb35320fabe6c01b493cfc9}} 
+\index{Stone\_enemy@{Stone\_enemy}!````~Stone\_enemy@{$\sim$Stone\_enemy}}
+\index{````~Stone\_enemy@{$\sim$Stone\_enemy}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Stone\_enemy()}{~Stone\_enemy()}}
+{\footnotesize\ttfamily Stone\+\_\+enemy\+::$\sim$\+Stone\+\_\+enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Default destructor. 
+
+\mbox{\Hypertarget{class_stone__enemy_ae574bb588e36ea9159d31aa7b951c79f}\label{class_stone__enemy_ae574bb588e36ea9159d31aa7b951c79f}} 
+\index{Stone\_enemy@{Stone\_enemy}!Stone\_enemy@{Stone\_enemy}}
+\index{Stone\_enemy@{Stone\_enemy}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{Stone\_enemy()}{Stone\_enemy()}}
+{\footnotesize\ttfamily Stone\+\_\+enemy\+::\+Stone\+\_\+enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parametric constructor setting Stone\+\_\+\+Enemy\+::health at 3. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_stone__enemy_abd5e03da92bc0f708012f57d6465ec6f}\label{class_stone__enemy_abd5e03da92bc0f708012f57d6465ec6f}} 
+\index{Stone\_enemy@{Stone\_enemy}!shot@{shot}}
+\index{shot@{shot}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{shot()}{shot()}}
+{\footnotesize\ttfamily void Stone\+\_\+enemy\+::shot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&}]{e\+\_\+projectiles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function providing shot feature for stone enemy
+
+If both calls of function \mbox{\hyperlink{functions__and__methods_8cpp_aefd4d70d74d5c0584805915de76b1a5e}{my\+\_\+random(int)}} returns true stone projectile is added to a given vector. Probability of emplacement is set to 0,001\%. 
+
+Implements \mbox{\hyperlink{class_enemy_a786eba282508bc69ccdf9fa301877564}{Enemy}}.
+
+\mbox{\Hypertarget{class_stone__enemy_ab5a7d4e7beb6eda409b9b0ef10b4e59c}\label{class_stone__enemy_ab5a7d4e7beb6eda409b9b0ef10b4e59c}} 
+\index{Stone\_enemy@{Stone\_enemy}!show@{show}}
+\index{show@{show}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Stone\+\_\+enemy\+::show (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function displaying stone enemy sprite at object location in given window
+
+Depending on health value of enemy different texture is shown 
+
+Implements \mbox{\hyperlink{class_entity_abfb58fd96812acaf8c1edcf5ab7ccca6}{Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_stone__enemy_a6237002ab2009600ad1d611d2ec2ce25}\label{class_stone__enemy_a6237002ab2009600ad1d611d2ec2ce25}} 
+\index{Stone\_enemy@{Stone\_enemy}!graphics\_hp1@{graphics\_hp1}}
+\index{graphics\_hp1@{graphics\_hp1}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{graphics\_hp1}{graphics\_hp1}}
+{\footnotesize\ttfamily sf\+::\+Sprite Stone\+\_\+enemy\+::graphics\+\_\+hp1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprites storing textures for different hp-\/levels of this enemy type. 
+
+\mbox{\Hypertarget{class_stone__enemy_a3a427463e2eb70b457f765cb14925daf}\label{class_stone__enemy_a3a427463e2eb70b457f765cb14925daf}} 
+\index{Stone\_enemy@{Stone\_enemy}!graphics\_hp2@{graphics\_hp2}}
+\index{graphics\_hp2@{graphics\_hp2}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{graphics\_hp2}{graphics\_hp2}}
+{\footnotesize\ttfamily sf\+::\+Sprite Stone\+\_\+enemy\+::graphics\+\_\+hp2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_stone__enemy_aa8ebb0085d14a497176bcc8704abf4bc}\label{class_stone__enemy_aa8ebb0085d14a497176bcc8704abf4bc}} 
+\index{Stone\_enemy@{Stone\_enemy}!graphics\_hp3@{graphics\_hp3}}
+\index{graphics\_hp3@{graphics\_hp3}!Stone\_enemy@{Stone\_enemy}}
+\doxysubsubsection{\texorpdfstring{graphics\_hp3}{graphics\_hp3}}
+{\footnotesize\ttfamily sf\+::\+Sprite Stone\+\_\+enemy\+::graphics\+\_\+hp3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{classes__and__functions_8h}{classes\+\_\+and\+\_\+functions.\+h}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{functions__and__methods_8cpp}{functions\+\_\+and\+\_\+methods.\+cpp}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

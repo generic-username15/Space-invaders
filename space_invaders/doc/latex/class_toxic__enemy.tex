@@ -1,0 +1,109 @@
+\hypertarget{class_toxic__enemy}{}\doxysection{Toxic\+\_\+enemy Class Reference}
+\label{class_toxic__enemy}\index{Toxic\_enemy@{Toxic\_enemy}}
+
+
+Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent.  
+
+
+
+
+{\ttfamily \#include $<$classes\+\_\+and\+\_\+functions.\+h$>$}
+
+Inheritance diagram for Toxic\+\_\+enemy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_toxic__enemy}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_toxic__enemy_a68088f15922e2ac50b641a14869c39f3}{$\sim$\+Toxic\+\_\+enemy}} () override=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_toxic__enemy_a2913c670091ec6df85cdb5deb5483cfb}{Toxic\+\_\+enemy}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Parametric constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_toxic__enemy_a9bb6ec8995db0e715ea53907b8fd93b4}{show}} (sf\+::\+Render\+Window \&win) override
+\begin{DoxyCompactList}\small\item\em Function displaying toxic enemy sprite at object location in given window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_toxic__enemy_a85e6f9fcb5c05aa229d4cbe9258b78c8}{shot}} (std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&e\+\_\+bullet) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static sf\+::\+Sprite \mbox{\hyperlink{class_toxic__enemy_a533c34a9d41df245e615c4986dd84020}{graphics}}
+\begin{DoxyCompactList}\small\item\em Sprite storing texture of this enemy type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Second sub-\/class of \mbox{\hyperlink{class_enemy}{Enemy}} representing stone type opponent. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_toxic__enemy_a68088f15922e2ac50b641a14869c39f3}\label{class_toxic__enemy_a68088f15922e2ac50b641a14869c39f3}} 
+\index{Toxic\_enemy@{Toxic\_enemy}!````~Toxic\_enemy@{$\sim$Toxic\_enemy}}
+\index{````~Toxic\_enemy@{$\sim$Toxic\_enemy}!Toxic\_enemy@{Toxic\_enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Toxic\_enemy()}{~Toxic\_enemy()}}
+{\footnotesize\ttfamily Toxic\+\_\+enemy\+::$\sim$\+Toxic\+\_\+enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\mbox{\Hypertarget{class_toxic__enemy_a2913c670091ec6df85cdb5deb5483cfb}\label{class_toxic__enemy_a2913c670091ec6df85cdb5deb5483cfb}} 
+\index{Toxic\_enemy@{Toxic\_enemy}!Toxic\_enemy@{Toxic\_enemy}}
+\index{Toxic\_enemy@{Toxic\_enemy}!Toxic\_enemy@{Toxic\_enemy}}
+\doxysubsubsection{\texorpdfstring{Toxic\_enemy()}{Toxic\_enemy()}}
+{\footnotesize\ttfamily Toxic\+\_\+enemy\+::\+Toxic\+\_\+enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parametric constructor. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_toxic__enemy_a85e6f9fcb5c05aa229d4cbe9258b78c8}\label{class_toxic__enemy_a85e6f9fcb5c05aa229d4cbe9258b78c8}} 
+\index{Toxic\_enemy@{Toxic\_enemy}!shot@{shot}}
+\index{shot@{shot}!Toxic\_enemy@{Toxic\_enemy}}
+\doxysubsubsection{\texorpdfstring{shot()}{shot()}}
+{\footnotesize\ttfamily void Toxic\+\_\+enemy\+::shot (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_enemy__projectile}{Enemy\+\_\+projectile}} $\ast$ $>$ \&}]{e\+\_\+bullet }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Function providing shot feature for stone enemy
+
+If both calls of function \mbox{\hyperlink{functions__and__methods_8cpp_aefd4d70d74d5c0584805915de76b1a5e}{my\+\_\+random(int)}} returns true stone projectile is added to a given vector. Probability of emplacement is set to 0,015\%. 
+
+Implements \mbox{\hyperlink{class_enemy_a786eba282508bc69ccdf9fa301877564}{Enemy}}.
+
+\mbox{\Hypertarget{class_toxic__enemy_a9bb6ec8995db0e715ea53907b8fd93b4}\label{class_toxic__enemy_a9bb6ec8995db0e715ea53907b8fd93b4}} 
+\index{Toxic\_enemy@{Toxic\_enemy}!show@{show}}
+\index{show@{show}!Toxic\_enemy@{Toxic\_enemy}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Toxic\+\_\+enemy\+::show (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function displaying toxic enemy sprite at object location in given window. 
+
+
+
+Implements \mbox{\hyperlink{class_entity_abfb58fd96812acaf8c1edcf5ab7ccca6}{Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_toxic__enemy_a533c34a9d41df245e615c4986dd84020}\label{class_toxic__enemy_a533c34a9d41df245e615c4986dd84020}} 
+\index{Toxic\_enemy@{Toxic\_enemy}!graphics@{graphics}}
+\index{graphics@{graphics}!Toxic\_enemy@{Toxic\_enemy}}
+\doxysubsubsection{\texorpdfstring{graphics}{graphics}}
+{\footnotesize\ttfamily sf\+::\+Sprite Toxic\+\_\+enemy\+::graphics\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite storing texture of this enemy type. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{classes__and__functions_8h}{classes\+\_\+and\+\_\+functions.\+h}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{functions__and__methods_8cpp}{functions\+\_\+and\+\_\+methods.\+cpp}}\item 
+C\+:/\+Users/max/source/repos/space\+\_\+invaders/space\+\_\+invaders/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
